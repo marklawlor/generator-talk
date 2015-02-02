@@ -1,0 +1,44 @@
+pre .code {
+  display: block;
+  padding: 0.5em;
+  background: #3F3F3F;
+  color: #DCDCDC;
+}
+
+.reveal pre .code {
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+
+}
+
+.reveal .slides section .container {
+  position: relative;
+  display: inline;
+}
+
+
+.reveal .slides section .container .fragment {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.split-code {
+  width: 49% !important;
+  float: left !important;
+}
+
+.split-code pre {
+  width: 100% !important;
+}
+
+.split-code code {
+  max-height: none !important;
+}
+
+
+.split-code + .split-code {
+  margin-left: 2% !important;
+}

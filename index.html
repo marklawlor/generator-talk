@@ -1,0 +1,13 @@
+---
+layout: reveal
+title: not used. Use _config.yml!
+---
+
+<link rel="stylesheet" href="theme/styles.css">
+{% for post in site.posts reversed %}
+<section data-markdown data-separator="^\n---\n$" data-vertical="^\n--\n$" data-notes="^Note:">
+<script type="text/template">
+{{ post.content }}
+</script>
+</section>
+{% endfor %}
